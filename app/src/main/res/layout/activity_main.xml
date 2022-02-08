@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/logo"
         android:layout_width="261dp"
         android:layout_height="257dp"
         android:src="@drawable/logo"
@@ -29,12 +29,13 @@
         android:textStyle="normal|bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        app:layout_constraintVertical_bias="0.092" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/nsbm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="248dp"
@@ -59,7 +60,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/nsbm"
         app:layout_constraintVertical_bias="0.089"
         app:lazyloader_animDur="800"
         app:lazyloader_dotsDist="10dp"
