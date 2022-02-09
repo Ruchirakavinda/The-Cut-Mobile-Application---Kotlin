@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
 
         Handler().postDelayed({
 
-            startActivity(Intent(this, ViewDetails::class.java))
+            startActivity(Intent(this, HomePage::class.java))
             finish()
         },splashScreentimeout)
     }

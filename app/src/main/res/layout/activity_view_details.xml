@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ViewDetails">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarVD"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/matte_black"
+        app:navigationIcon="@drawable/ic_baseline_arrow_back_ios_24"
+        app:title="The Cut"
+        app:titleTextColor="@color/white"
+        app:titleMarginStart="10dp"
+        app:subtitle="NSBM Green University"
+        app:subtitleTextColor="@color/white"
+        app:buttonGravity="center_vertical"
+        android:elevation="55dp"
+        >
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_gravity="center_horizontal">
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>
