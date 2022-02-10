@@ -29,8 +29,116 @@
         android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
         android:background="@color/white"
-        android:layout_gravity="center_horizontal">
+        >
+
+
+        <View
+            android:id="@+id/coverimg"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/haircut"
+            app:layout_constraintBottom_toTopOf="@+id/hrline"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/topic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="236dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Hair Cuts"
+            android:textColor="@color/black"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toTopOf="@+id/desc"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.088"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="162dp"
+            android:layout_height="69dp"
+            android:fontFamily="sans-serif"
+            android:text="Lorem ipsum dollar lorem ipsum"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/price"
+            app:layout_constraintHorizontal_bias="0.243"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/custom_btn"
+            android:text="LKR 1500"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.487" />
+
+        <View
+            android:id="@+id/hrline"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_margin="16dp"
+            android:background="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/topic02"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/desc"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/topic02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:text="About"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.069"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/desc" />
+
+        <TextView
+            android:id="@+id/desc02"
+            android:layout_width="351dp"
+            android:layout_height="69dp"
+            android:fontFamily="sans-serif"
+            android:text="Lorem ipsum dollar lLorem ipsum dollar loreLorem ipsum dollar lorem ipsumm ipsumorem ipsum"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/appoinmentbtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hrline"
+            app:layout_constraintVertical_bias="0.702" />
+
+        <Button
+            android:id="@+id/appoinmentbtn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="30dp"
+            android:background="@drawable/custom_btn"
+            android:text="Make an Appoinment"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hrline"
+            app:layout_constraintVertical_bias="0.923" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
