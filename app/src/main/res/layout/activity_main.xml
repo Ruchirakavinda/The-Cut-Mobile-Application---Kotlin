@@ -34,34 +34,18 @@
         app:layout_constraintTop_toBottomOf="@+id/logo"
         app:layout_constraintVertical_bias="0.092" />
 
-    <TextView
-        android:id="@+id/nsbm"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="248dp"
-        android:fontFamily="sans-serif"
-        android:text="NSBM Green University"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        android:textStyle="italic"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <com.agrawalsuneet.dotsloader.loaders.LazyLoader
         android:id="@+id/splashLoader"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:layout_marginTop="212dp"
-        android:layout_marginBottom="300dp"
+        android:layout_marginBottom="500dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nsbm"
-        app:layout_constraintVertical_bias="0.089"
+        app:layout_constraintVertical_bias="0.413"
         app:lazyloader_animDur="800"
         app:lazyloader_dotsDist="10dp"
         app:lazyloader_dotsRadius="8dp"
@@ -70,7 +54,25 @@
         app:lazyloader_interpolator="@android:anim/decelerate_interpolator"
         app:lazyloader_secondDelayDur="300"
         app:lazyloader_secondDotColor="#8DFFFFFF"
-        app:lazyloader_thirdDotColor="#43FFFFFF" />
+        app:lazyloader_thirdDotColor="#43FFFFFF">
+
+    </com.agrawalsuneet.dotsloader.loaders.LazyLoader>
+
+    <TextView
+        android:id="@+id/nsbm"
+        android:layout_width="202dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="63dp"
+        android:fontFamily="sans-serif"
+        android:text="NSBM Green University"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/splashLoader"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
