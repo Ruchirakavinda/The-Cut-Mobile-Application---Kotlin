@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TheCut">
-        <activity android:name=".HomePage"></activity>
+        <activity android:name=".NewAppointments"></activity>
+        <activity android:name=".HomePage" />
         <activity android:name=".ViewDetails" />
         <activity
             android:name=".MainActivity"

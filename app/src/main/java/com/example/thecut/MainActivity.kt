@@ -34,7 +34,6 @@ class MainActivity : AppCompatActivity() {
         nsbm.setAnimation(bottomAnimation)
 
         Handler().postDelayed({
-
             startActivity(Intent(this, HomePage::class.java))
             finish()
         },splashScreentimeout)

@@ -10,9 +10,15 @@ class HomePage : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home_page)
 
-        val button : Button = findViewById(R.id.view_details)
-        button.setOnClickListener{
+        val button01 : Button = findViewById(R.id.view_details)
+        val button02 : Button = findViewById(R.id.new_appointments)
+        button01.setOnClickListener{
             val intent = Intent(this, ViewDetails::class.java)
+            startActivity(intent)
+        }
+
+        button02.setOnClickListener{
+            val intent = Intent(this, NewAppointments::class.java)
             startActivity(intent)
         }
     }

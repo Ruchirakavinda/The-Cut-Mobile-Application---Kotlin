@@ -47,10 +47,25 @@
         android:background="@drawable/custom_btn"
         android:elevation="55dp"
         android:text="View Details"
+        android:textAllCaps="false"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <Button
+        android:id="@+id/new_appointments"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_btn"
+        android:elevation="55dp"
+        android:text="New appointments"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_details" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

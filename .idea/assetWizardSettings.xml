@@ -210,7 +210,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="imagePath" value="D:\Year03_sem1\MAD\Project\Assests\getting-haircut.jpg" />
+                                                <entry key="imagePath" value="D:\Year03_sem1\MAD\Project\Assests\haircut.jpg" />
                                                 <entry key="scalingPercent" value="200" />
                                               </map>
                                             </option>
@@ -222,8 +222,8 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="imagePath" value="D:\Year03_sem1\MAD\Project\Assests\getting-haircut.jpg" />
-                                                <entry key="scalingPercent" value="180" />
+                                                <entry key="imagePath" value="D:\Year03_sem1\MAD\Project\Assests\haircut.jpg" />
+                                                <entry key="scalingPercent" value="69" />
                                               </map>
                                             </option>
                                           </PersistentState>
