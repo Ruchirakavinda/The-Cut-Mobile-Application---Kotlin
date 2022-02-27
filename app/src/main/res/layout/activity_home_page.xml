@@ -67,5 +67,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view_details" />
 
+    <Button
+        android:id="@+id/Home"
+        android:layout_width="127dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_btn"
+        android:elevation="55dp"
+        android:text="Home"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/new_appointments" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
