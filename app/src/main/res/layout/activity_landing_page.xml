@@ -23,8 +23,7 @@
         app:subtitleTextColor="@color/white"
         app:title="The Cut"
         app:titleMarginStart="10dp"
-        app:titleTextColor="@color/white"
-        tools:ignore="MissingConstraints">
+        app:titleTextColor="@color/white">
 
     </androidx.appcompat.widget.Toolbar>
 
