@@ -16,6 +16,14 @@ class NewAppointments : AppCompatActivity() {
     lateinit var date: Array<String>
     lateinit var time: Array<String>
 
+    private lateinit var newRecyclerView02 : RecyclerView
+    private lateinit var newArrayList02: ArrayList<Items02>
+    lateinit var title02: Array<String>
+    lateinit var name02: Array<String>
+    lateinit var contact02: Array<String>
+    lateinit var date02: Array<String>
+    lateinit var time02: Array<String>
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_new_appointments)
@@ -25,6 +33,9 @@ class NewAppointments : AppCompatActivity() {
         toolbar.setNavigationOnClickListener {
             finish()
         }
+
+
+        //Recycler View 02
 
         title = arrayOf(
             "Full Body Massage",
@@ -67,6 +78,52 @@ class NewAppointments : AppCompatActivity() {
 
         newArrayList = arrayListOf()
         getUserData()
+
+
+        //Recycler View 02
+
+
+        title02 = arrayOf(
+            "Head Massage",
+            "Hair Coloring",
+            "Hair Trim",
+            "Rebonding"
+        )
+
+        name02 = arrayOf(
+            "John wyma",
+            "Dani Daniel",
+            "Sunny fernando",
+            "Saman Kumara"
+        )
+
+        contact02 = arrayOf(
+            "0775295695",
+            "0782568957",
+            "0785369852",
+            "0756954696"
+        )
+
+        date02 = arrayOf(
+            "07/25/2021",
+            "08/06/2022",
+            "15/12/2021",
+            "11/11/2021"
+        )
+
+        time02 = arrayOf(
+            "11.00 AM",
+            "12.00 PM",
+            "01.30 PM",
+            "02.45 PM"
+        )
+
+        newRecyclerView02 = findViewById(R.id.recycler02)
+        newRecyclerView02.layoutManager = LinearLayoutManager(this)
+        newRecyclerView02.setHasFixedSize(true)
+
+        newArrayList02 = arrayListOf()
+        getUserData02()
     }
 
     private fun getUserData() {
@@ -80,4 +137,22 @@ class NewAppointments : AppCompatActivity() {
         newRecyclerView.adapter = RecyclerAdapter01(newArrayList)
 
         }
+
+
+
+    private fun getUserData02() {
+
+        for(i in title02.indices){
+
+            val itemss02 = Items02(title02[i],name02[i],contact02[i],date02[i],time02[i])
+            newArrayList02.add(itemss02)
+        }
+
+        newRecyclerView02.adapter = RecyclerAdapter02(newArrayList02)
+
     }
+    }
+
+
+
+
