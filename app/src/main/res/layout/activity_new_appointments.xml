@@ -46,7 +46,7 @@
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="115dp"
+                    android:layout_height="120dp"
                     android:src="@drawable/nacover"
                     />
 
@@ -111,7 +111,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="20dp"
                 android:text="Accepted Appointments"
                 android:textColor="#000000"
                 android:textSize="20sp"
@@ -123,7 +123,7 @@
                 android:id="@+id/viewall02AP"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="23dp"
                 android:layout_marginEnd="20dp"
                 android:text="View All"
                 android:textColor="#000000"
@@ -133,6 +133,17 @@
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toEndOf="@+id/accepted"
                 app:layout_constraintTop_toBottomOf="@+id/recycler01" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/accepted"
+                android:padding="10dp">
+
+            </androidx.recyclerview.widget.RecyclerView>
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
