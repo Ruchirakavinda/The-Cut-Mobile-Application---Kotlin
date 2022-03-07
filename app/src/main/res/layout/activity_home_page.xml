@@ -6,23 +6,25 @@
     android:layout_height="match_parent"
     tools:context=".ViewDetails">
 
+
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:background="@color/matte_black"
+        android:elevation="55dp"
+        app:buttonGravity="center_vertical"
+        app:layout_constraintStart_toStartOf="parent"
         app:navigationIcon="@drawable/ic_baseline_notes_24"
-        app:title="The Cut"
-        app:titleTextColor="@color/white"
-        app:titleMarginStart="10dp"
         app:subtitle="NSBM Green University"
         app:subtitleTextColor="@color/white"
-        app:buttonGravity="center_vertical"
-        android:elevation="55dp"
-        tools:ignore="MissingConstraints">
+        app:title="The Cut"
+        app:titleMarginStart="10dp"
+        app:titleTextColor="@color/white"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="1dp">
 
     </androidx.appcompat.widget.Toolbar>
-
 
     <TextView
         android:id="@+id/name"

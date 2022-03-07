@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="@color/black"
+    android:orientation="vertical"
+    app:layout_constraintCircleRadius="@dimen/cardview_default_radius">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="45dp"
+        android:text="THE CUT"
+        android:textColor="@color/white"
+        android:textSize="27dp">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="NSBM Green University"
+        android:textColor="@color/white"
+        android:textSize="13dp">
+
+    </TextView>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="-75dp"
+        android:src="@drawable/logo">
+
+    </ImageView>
+
+
+</LinearLayout>
+
+

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    tools:showIn="navigation_view"
+    >
+
+    <item
+        android:id="@+id/nav_home"
+        android:title="Home"
+        android:icon="@drawable/ic_baseline_home_24">
+
+    </item>
+
+
+    <item
+        android:id="@+id/nav_Profile"
+        android:title="Profile"
+        android:icon="@drawable/ic_baseline_account_box_24">
+
+    </item>
+
+    <item
+        android:id="@+id/nav_privacy"
+        android:title="Privacy Policy"
+        android:icon="@drawable/ic_baseline_lock_open_24">
+
+    </item>
+
+    <item
+        android:id="@+id/nav_location"
+        android:title="Location"
+        android:icon="@drawable/ic_baseline_location_on_24">
+
+    </item>
+
+    <item
+        android:id="@+id/nav_settings"
+        android:title="Settings"
+        android:icon="@drawable/ic_baseline_settings_24">
+
+    </item>
+
+    <item android:title="Account">
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:title="Log Out"
+                android:icon="@drawable/ic_baseline_login_24"
+                >
+            </item>
+        </menu>
+
+    </item>
+
+    <item android:title="Contact">
+        <menu>
+            <item
+                android:id="@+id/nav_whatsapp"
+                android:title="Whatsapp"
+                android:icon="@drawable/_7017_whatsapp_vector_icon_free_frame_1_"
+                >
+            </item>
+            <item
+                android:id="@+id/nav_facebook"
+                android:title="Facebook"
+                android:icon="@drawable/_5307_logo_computer_facebook_icon_icons_free_clipart_hd"
+                >
+            </item>
+
+        </menu>
+
+    </item>
+
+
+
+</menu>
+

@@ -15,10 +15,12 @@ class HorizontalRecycleView03 ( private val itemlist03 : ArrayList<Item_EventsDr
     override fun onBindViewHolder(holder: HorizontalRecycleView03.MyViewHolder03, position: Int) {
         val currentItem = itemlist03[position]
         holder.theme04.text = currentItem.theme03
-    }
+
+        }
 
     override fun getItemCount(): Int {
         return itemlist03.size
+
     }
 
     inner class MyViewHolder03(itemView: View) : RecyclerView.ViewHolder(itemView) {

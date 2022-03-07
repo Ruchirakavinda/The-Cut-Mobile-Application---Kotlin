@@ -10,6 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TheCut">
         <activity android:name=".LandingPage"></activity>
+
         <activity android:name=".NewAppointments" />
         <activity android:name=".HomePage" />
         <activity android:name=".ViewDetails" />

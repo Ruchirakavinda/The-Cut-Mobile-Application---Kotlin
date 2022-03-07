@@ -3,28 +3,37 @@ package com.example.thecut
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Adapter
+import android.widget.Toast
+import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.widget.Toolbar
+import androidx.drawerlayout.widget.DrawerLayout
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.navigation.NavigationView
 
 class LandingPage : AppCompatActivity() {
 
+    //RecyclerView01
     private lateinit var RecyclerView : RecyclerView
     private lateinit var ArrayList: ArrayList<Item>
     lateinit var theme: Array<String>
 
+    //RecyclerView02
     private lateinit var RecyclerView02 : RecyclerView
     private lateinit var ArrayList02: ArrayList<Item_ladies>
     lateinit var theme02: Array<String>
 
+    //RecyclerView03
     private lateinit var RecyclerView03 : RecyclerView
     private lateinit var ArrayList03: ArrayList<Item_EventsDressing>
     lateinit var theme03: Array<String>
 
 
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_landing_page)
+        setContentView(R.layout.navigation)
 
         //RecyclerView01
 
@@ -118,6 +127,22 @@ class LandingPage : AppCompatActivity() {
 
 
 
+        //Navigation
+
+        val drawerLayout : DrawerLayout =findViewById(R.id.drawerlayout)
+        val toggle = ActionBarDrawerToggle(this,drawerLayout,R.string.open,R.string.close)
+        toggle.isDrawerIndicatorEnabled =true
+        drawerLayout.addDrawerListener(toggle)
+        toggle.syncState()
+
+
+
+
+        }
+
+
+
+
 
 
 
@@ -132,4 +157,3 @@ class LandingPage : AppCompatActivity() {
 
     }
 
-}
