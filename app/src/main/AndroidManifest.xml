@@ -9,6 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TheCut">
+        <activity android:name=".AdminDashbord"></activity>
+        <activity android:name=".AdminAdd" />
+        <activity android:name=".AdminEdit" />
         <activity
             android:name=".SignupPage"
             android:exported="false" />

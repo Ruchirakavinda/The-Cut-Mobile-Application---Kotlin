@@ -28,7 +28,7 @@
         android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="336dp"
+        android:layout_marginBottom="424dp"
         android:fontFamily="@font/syncopate"
         android:text="THE CUT"
         android:textColor="@color/black"
@@ -40,24 +40,24 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/view_details"
-        android:layout_width="150dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="20dp"
+        android:id="@+id/Home"
+        android:layout_width="127dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/custom_btn"
         android:elevation="55dp"
-        android:text="View Details"
+        android:text="Home"
         android:textAllCaps="false"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/name" />
+        app:layout_constraintTop_toBottomOf="@+id/new_appointments" />
 
     <Button
         android:id="@+id/new_appointments"
         android:layout_width="wrap_content"
         android:layout_height="45dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="24dp"
         android:background="@drawable/custom_btn"
         android:elevation="55dp"
         android:text="New appointments"
@@ -68,19 +68,34 @@
         app:layout_constraintTop_toBottomOf="@+id/view_details" />
 
     <Button
-        android:id="@+id/Home"
-        android:layout_width="127dp"
-        android:layout_height="41dp"
-        android:layout_marginTop="20dp"
+        android:id="@+id/view_details"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/custom_btn"
         android:elevation="55dp"
-        android:text="Home"
+        android:text="View Details"
         android:textAllCaps="false"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/new_appointments" />
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <Button
+        android:id="@+id/admin"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/custom_btn"
+        android:elevation="55dp"
+        android:text="Admin"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Home" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

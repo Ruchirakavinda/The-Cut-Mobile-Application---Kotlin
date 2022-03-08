@@ -13,8 +13,9 @@ class HomePage : AppCompatActivity() {
         val button01 : Button = findViewById(R.id.view_details)
         val button02 : Button = findViewById(R.id.new_appointments)
         val button03 : Button = findViewById(R.id.Home)
+        val button04 : Button = findViewById(R.id.admin)
         button01.setOnClickListener{
-            val intent = Intent(this, ViewDetails::class.java)
+            val intent = Intent(this, AdminEdit::class.java)
             startActivity(intent)
         }
 
@@ -24,6 +25,11 @@ class HomePage : AppCompatActivity() {
         }
         button03.setOnClickListener{
             val intent = Intent(this, LandingPage::class.java)
+            startActivity(intent)
+        }
+
+        button04.setOnClickListener{
+            val intent = Intent(this, AdminAdd::class.java)
             startActivity(intent)
         }
     }

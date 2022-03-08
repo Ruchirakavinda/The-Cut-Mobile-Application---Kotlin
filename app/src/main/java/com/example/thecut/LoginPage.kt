@@ -23,5 +23,19 @@ class LoginPage : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val facebook : Button = findViewById(R.id.buttonfb)
+        facebook.setOnClickListener{
+            val intent = Intent(this, HomePage::class.java)
+            startActivity(intent)
+        }
+
+        val google : Button = findViewById(R.id.buttongl)
+        google.setOnClickListener{
+            val intent = Intent(this, HomePage::class.java)
+            startActivity(intent)
+        }
+
+
+
     }
 }
