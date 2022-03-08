@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TheCut">
-        <activity android:name=".LandingPage"></activity>
+        <activity
+            android:name=".SignupPage"
+            android:exported="false" />
+        <activity
+            android:name=".LoginPage"
+            android:exported="false" />
+        <activity android:name=".LandingPage" />
         <activity android:name=".NewAppointments" />
         <activity android:name=".HomePage" />
         <activity android:name=".ViewDetails" />
